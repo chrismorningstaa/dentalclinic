@@ -261,7 +261,7 @@
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: 6px;
-  height: 420px;
+  height: 720px;
   overflow: hidden;
   background: var(--black);
 }
@@ -287,7 +287,7 @@
 }
 .gallery-strip .gitem:hover .glabel { transform: translateY(0); }
 .gallery-strip .gitem.featured img {
-  object-position: top center;
+  object-position: left;
   object-fit: cover;
 }
 .gallery-strip .gitem.featured::after {
@@ -368,8 +368,8 @@
 
 .tour-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
-  grid-template-rows: repeat(3, 220px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 260px);
   gap: 12px;
   margin-top: 60px;
 }
@@ -538,14 +538,15 @@
       section, #about, #contact { padding: 70px 24px; }
       #hero .hero-content { padding: 0 24px 70px; }
       #about, #contact { grid-template-columns: 1fr; gap: 50px; }
-  .tour-grid {
+
+        .tour-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 240px);
+    grid-template-rows: repeat(8, 240px);
   }
 
-  .tour-item.span-col {
-    grid-row: span 1;
-  }
+      .tour-item.span-col {
+        grid-row: span 1;
+      }
       .gallery-strip { grid-template-columns: repeat(3, 1fr); height: 240px; }
       .gallery-strip .gitem:nth-child(4),
       .gallery-strip .gitem:nth-child(5) { display: none; }
@@ -586,7 +587,7 @@
   <div class="hero-content">
     <!-- <div class="hero-eyebrow">Limited Time — Big Discount on Selected Services</div> -->
     <h1 class="hero-h1">Your smile,<br/><em>our expertise.</em></h1>
-    <p class="hero-sub">Experience comfortable, quality, and patient-centered dental care in a space designed for your well-being.</p>
+    <p class="hero-sub">Experience comfortable, quality, and patient-centered dental care in a modern dental space designed with you in mind.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-gold">Book Appointment</a>
       <a href="#services" class="btn-outline">View Services</a>
@@ -640,7 +641,7 @@
 <!-- ── GALLERY STRIP ── -->
 <div class="gallery-strip">
   <div class="gitem featured">
-    <img src="DocMain.png" alt="Dr. Ilagan"/>
+    <img src="DocPic1.jpg" alt="Dr. Ilagan"/>
     <div class="glabel">A Proud Achievement</div>
   </div>
   <div class="gitem">
@@ -882,7 +883,11 @@
   <div class="section-label reveal">The Clinic</div>
   <h2 class="section-title reveal reveal-delay-1">Designed for your<br/><em>comfort.</em></h2>
   <div class="tour-grid">
-    <div class="tour-item span-col reveal">
+    <div class="tour-item reveal">
+      <img src="FrontDoorStep.jpg" alt="Dr. Margot Gail M. Ilagan Dental Clinic"/>
+      <div class="tour-caption">Dr. Margot Gail M. Ilagan Dental Clinic</div>
+    </div>
+    <div class="tour-item reveal">
       <img src="Reception.jpg" alt="Reception"/>
       <div class="tour-caption">Reception</div>
     </div>
@@ -895,8 +900,8 @@
       <div class="tour-caption">Restroom</div>
     </div>
     <div class="tour-item reveal reveal-delay-1">
-      <img src="Office.jpg" alt="Dentist&apos;s Office"/>
-      <div class="tour-caption">Dentist&apos;s Office</div>
+      <img src="Office.jpg" alt="Dentist&apos;s Desk"/>
+      <div class="tour-caption">Dentist&apos;s Desk</div>
     </div>
     <div class="tour-item reveal reveal-delay-2">
       <img src="moderndentalunit.jpg" alt="Modern Dental Unit"/>
